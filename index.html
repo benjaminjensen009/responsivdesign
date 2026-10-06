@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsiv design</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="text-gray-800">
+<nav class="bg-gray-200 px-7 py-4 md:px-8 xl:px-10">
+ <div class="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 md:grid-cols-[auto_1fr_auto] md:gap-6">
+ <h1 class="font-bold text-xl">
+    <div class="grid grid-cols-1 gap-2 md:grid-cols-4 xl:grid-cols-3">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+          </svg>
+ </h1>
+ <div class="hidden flex-wrap justify-center gap-x-6 gap-y-2 text-sm md:flex">
+<a href="#">Link one</a>
+<a href="#">Link two</a>
+ <a href="#">Link three</a>
+<a href="#">Link four</a>
+</div>
+<button class="rounded bg-gray-700 px-4 py-2 text-white">Button</button>
+ </div>
+</nav>
+<main class="mx-auto max-w-[1200px]">
+<section class="grid grid-cols-1 items-center gap-8 px-7 py-12 md:grid-cols-2 md:gap-8 md:px-8 md:py-14 xl:px-10 xl:py-16">
+<div class="order-2 md:order-1">
+ <h2 class="max-w-md text-3xl font-bold leading-tight xl:text-4xl">
+Medium length hero headline
+</h2>
+<p class="mt-6 max-w-lg text-sm leading-snug">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id ornare nisl,
+eu dapibus risus. Vivamus eget consequat lectus. Donec vitae libero.
+</p>
+<div class="mt-5 flex gap-2">
+<button class="rounded bg-gray-700 px-4 py-2 text-sm text-white">Button</button>
+<button class="rounded border border-gray-400 px-4 py-2 text-sm">Button</button>
+</div>
+ </div>
+<img
+src="https://fastly.picsum.photos/id/679/300/300.jpg?hmac=sOnn1erXgFUtrEBHqNgADZqc_mVDj-eKoCtg3Rb5qmM"
+alt="Hero image"
+ class="order-1 h-64 w-full object-cover md:order-2 md:h-64 xl:h-72">
+</section>
+<section class="grid grid-cols-1 gap-10 px-7 py-6 md:grid-cols-2 md:gap-12 md:px-8 md:py-8 xl:px-10">
+ <div>
+ <p class="text-sm">Tagline</p>
+<h2 class="mt-5 max-w-md text-2xl font-bold leading-tight">
+Medium length features headline
+</h2>
+<p class="mt-5 max-w-lg text-sm leading-snug">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id ornare nisl,
+eu dapibus risus. Vivamus eget consequat lectus. Donec vitae libero. Per facer
+affert ut.
+</p>
+ </div>
+ <div class="space-y-6">
+<div class="flex items-start gap-4">
+<img src="https://fastly.picsum.photos/id/861/200/200.jpg?hmac=UJSK-tjn1gjzSmwHWZhjpaGahNSBDQWpMoNvg8Bxy8k" alt="Feature" class="h-12 w-12 shrink-0 rounded object-cover">
+<div>
+<h3 class="font-bold text-sm">Medium length headline</h3>
+ <p class="mt-1 text-sm">Lorem ipsum dolor sit amet et delectus accommodare his consul copiose.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<img src="https://fastly.picsum.photos/id/861/200/200.jpg?hmac=UJSK-tjn1gjzSmwHWZhjpaGahNSBDQWpMoNvg8Bxy8k" alt="Feature" class="h-12 w-12 shrink-0 rounded object-cover">
+<div>
+<h3 class="font-bold text-sm">Medium length headline</h3>
+ <p class="mt-1 text-sm">Lorem ipsum dolor sit amet et delectus accommodare his consul copiose.</p>
+</div>
+ </div>
+<div class="flex items-start gap-4">
+<img src="https://fastly.picsum.photos/id/861/200/200.jpg?hmac=UJSK-tjn1gjzSmwHWZhjpaGahNSBDQWpMoNvg8Bxy8k" alt="Feature" class="h-12 w-12 shrink-0 rounded object-cover">
+<div>
+<h3 class="font-bold text-sm">Medium length headline</h3>
+ <p class="mt-1 text-sm">Lorem ipsum dolor sit amet et delectus accommodare his consul copiose.</p>
+ </div>
+</div>
+ </div>
+</section>
+<div class="grid grid-cols-1 gap-2 md:grid-cols-4 xl:grid-cols-3">
+<img
+ src="https://fastly.picsum.photos/id/662/300/300.jpg?hmac=bnzTCyD_kx8Rv52mE9pVijWfprRjyAZkPJQTANw95cc"
+alt="Gallery image"
+ class="h-64 w-full object-cover md:col-span-4 md:order-5 xl:col-span-1 xl:row-span-2 xl:order-none xl:h-full">
+<div class="grid grid-cols-1 gap-2 md:col-span-4 md:grid-cols-4 xl:col-span-2 xl:grid-cols-2">
+<img
+src="https://fastly.picsum.photos/id/662/300/300.jpg?hmac=bnzTCyD_kx8Rv52mE9pVijWfprRjyAZkPJQTANw95cc"
+alt="Gallery image"
+class="h-64 w-full object-cover">
+<img
+src="https://fastly.picsum.photos/id/662/300/300.jpg?hmac=bnzTCyD_kx8Rv52mE9pVijWfprRjyAZkPJQTANw95cc"
+ alt="Gallery image"
+ class="h-64 w-full object-cover">
+<img
+ src="https://fastly.picsum.photos/id/662/300/300.jpg?hmac=bnzTCyD_kx8Rv52mE9pVijWfprRjyAZkPJQTANw95cc"
+alt="Gallery image"
+class="h-64 w-full object-cover" >
+<img
+src="https://fastly.picsum.photos/id/662/300/300.jpg?hmac=bnzTCyD_kx8Rv52mE9pVijWfprRjyAZkPJQTANw95cc"
+alt="Gallery image"
+ class="h-64 w-full object-cover">
+ </div>
+</div>
+</section>
+</main>
+ <footer class="border-t px-7 py-10 md:px-8 md:py-12 xl:px-10">
+ <div class="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 text-center md:grid-cols-2 md:text-left xl:grid-cols-4">
+ <div>
+ <h2 class="font-bold text-xl">Logo</h2>
+<p class="mt-5 text-sm">
+  Address:<br>
+ 123 Main Street, City<br>
+ State Province, Country
+  </p>
+ <div class="mt-6 flex justify-center gap-4 text-sm md:justify-start">
+  <span>◎</span><span>●</span><span>♥</span>
+ </div>
+ </div>
+ <div>
+ <h3 class="font-bold">Column one</h3>
+ <p class="mt-3 text-sm">Link one</p><p class="text-sm">Link two</p><p class="text-sm">Link three</p><p class="text-sm">Link four</p>
+ </div>
+<div>
+<h3 class="font-bold">Column two</h3>
+<p class="mt-3 text-sm">Link five</p><p class="text-sm">Link six</p><p class="text-sm">Link seven</p><p class="text-sm">Link eight</p>
+ </div>
+ <div>
+<h3 class="font-bold">Column three</h3>
+ <p class="mt-3 text-sm">Link nine</p><p class="text-sm">Link ten</p><p class="text-sm">Link eleven</p><p class="text-sm">Link twelve</p>
+ </div>
+</div>
+ <div class="mx-auto mt-8 flex max-w-[1200px] flex-col gap-3 border-t pt-5 text-center text-xs text-gray-400 md:flex-row md:justify-center md:gap-8">
+<span>© 2026 Benjamins Website. All rights reserved.</span>
+ <span>Privacy Policy</span>
+<span>Terms of Service</span>
+ </div>
+ </footer>
+</body>
+</html>
