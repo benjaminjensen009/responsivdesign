@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Responsiv Design</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <nav class="bg-gray-200 px-7 py-4 md:px-8 xl:px-10">
+    <div class="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 md:grid-cols-[auto_1fr_auto] md:gap-6">
+      <h1 class="font-bold text-xl">
+        <a href="index.html" aria-label="Go to home page">
+          <img
+            src="https://raw.githubusercontent.com/benjaminjensen009/responsivdesign/main/BD.png"
+            alt="Benjamin's Digital logo"
+            width="180"
+          />
+        </a>
+      </h1>
+
+      <div class="hidden flex-wrap justify-center gap-x-6 gap-y-2 text-sm md:flex">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a>
+        <a href="terms-of-service.html" class="hover:underline">Terms of Service</a>
+      </div>
+
+      <a href="Contact.html" class="inline-block rounded bg-gray-700 px-4 py-2 text-white no-underline">Contact</a>
+    </div>
+  </nav>
+
+  <main class="mx-auto max-w-[1200px] px-7 py-12 md:px-8 xl:px-10">
+    <section class="grid grid-cols-1 gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-start">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">Get in touch</p>
+        <h2 class="mt-4 text-3xl font-bold leading-tight xl:text-4xl">Let’s talk about your project.</h2>
+        <p class="mt-5 max-w-lg text-sm leading-snug text-gray-600">
+          Whether you want a custom website, design help, a quote, or just want to ask a question,
+          send a message and I’ll get back to you as soon as possible.
+        </p>
+
+        <div class="mt-8 space-y-4 text-sm">
+          <p>
+            <span class="font-semibold">Email:</span>
+            <a href="mailto:hello@yourdomain.com" class="text-blue-600 hover:underline">hello@yourdomain.com</a>
+          </p>
+          <p>
+            <span class="font-semibold">Availability:</span>
+            Monday–Friday, 9:00–17:00
+          </p>
+        </div>
+
+        <div class="mt-8 rounded border border-gray-200 bg-white p-6 shadow-sm">
+          <h3 class="font-bold text-lg">Prefer email?</h3>
+          <a
+            href="mailto:hello@yourdomain.com?subject=Website%20contact"
+            class="mt-4 inline-block rounded bg-gray-700 px-4 py-2 text-sm text-white no-underline"
+          >
+            Send an email
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded border border-gray-200 bg-white p-6 shadow-sm">
+        <h3 class="text-xl font-bold">Send a message</h3>
+
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-6 space-y-4">
+          <div>
+            <label for="name" class="mb-2 block text-sm font-medium">Name</label>
+            <input id="name" name="name" type="text" required class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:border-gray-500 focus:outline-none" />
+          </div>
+
+          <div>
+            <label for="email" class="mb-2 block text-sm font-medium">Email</label>
+            <input id="email" name="email" type="email" required class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:border-gray-500 focus:outline-none" />
+          </div>
+
+          <div>
+            <label for="message" class="mb-2 block text-sm font-medium">Message</label>
+            <textarea id="message" name="message" rows="6" required class="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:border-gray-500 focus:outline-none"></textarea>
+          </div>
+
+          <button type="submit" class="rounded bg-gray-700 px-4 py-2 text-sm text-white">Send message</button>
+          <p id="formNote" class="text-xs text-gray-500">If you have not set up Formspree yet, your email app will open instead.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t px-7 py-10 md:px-8 md:py-12 xl:px-10">
+    <div class="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 text-center md:grid-cols-2 md:text-left xl:grid-cols-4">
+      <div>
+        <h2 class="font-bold text-xl">Logo</h2>
+        <p class="mt-5 text-sm">
+          Address:<br>
+          123 Main Street, City<br>
+          State Province, Country
+        </p>
+        <div class="mt-6 flex justify-center gap-4 text-sm md:justify-start">
+          <span>◎</span><span>●</span><span>♥</span>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-bold">Column one</h3>
+        <p class="mt-3 text-sm">Link one</p>
+        <p class="text-sm">Link two</p>
+        <p class="text-sm">Link three</p>
+        <p class="text-sm">Link four</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">Column two</h3>
+        <p class="mt-3 text-sm">Link five</p>
+        <p class="text-sm">Link six</p>
+        <p class="text-sm">Link seven</p>
+        <p class="text-sm">Link eight</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">Column three</h3>
+        <p class="mt-3 text-sm">Link nine</p>
+        <p class="text-sm">Link ten</p>
+        <p class="text-sm">Link eleven</p>
+        <p class="text-sm">Link twelve</p>
+      </div>
+    </div>
+
+    <div class="mx-auto mt-10 text-center text-xs text-gray-400">
+      <a href="privacy-policy.html" class="text-blue-500 hover:underline">Privacy Policy</a>
+      <span class="mx-2">|</span>
+      <a href="terms-of-service.html" class="text-blue-500 hover:underline">Terms of Service</a>
+      <span class="mx-2">|</span>
+      <a href="Contact.html" class="text-blue-500 hover:underline">Contact</a>
+      <div class="mt-2">© 2026 Benjamins Website. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    const formNote = document.getElementById('formNote');
+    const fallbackEmail = 'hello@yourdomain.com';
+
+    contactForm.addEventListener('submit', function (event) {
+      const action = contactForm.getAttribute('action');
+
+      if (!action || action.includes('YOUR_FORM_ID')) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        const subject = encodeURIComponent(name ? `Contact from ${name}` : 'Website contact');
+        const body = encodeURIComponent(
+          `Name: ${name || 'Not provided'}\n` +
+          `Email: ${email || 'Not provided'}\n\n` +
+          `Message:\n${message}`
+        );
+
+        window.location.href = `mailto:${fallbackEmail}?subject=${subject}&body=${body}`;
+        formNote.textContent = 'Your email app is opening so you can send the message.';
+      }
+    });
+  </script>
+</body>
+</html>
